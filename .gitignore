@@ -4,5 +4,5 @@ ve-*
 **/cache/
 **/__pycache__/
 logs/
-.temp/
+temp/
 .ipynb_checkpoints/
