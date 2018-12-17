@@ -1,0 +1,8 @@
+ve-*
+.ipynb_checkpoints/
+**/.cache/
+**/cache/
+**/__pycache__/
+logs/
+.temp/
+.ipynb_checkpoints/
