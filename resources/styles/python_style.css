@@ -1,0 +1,45 @@
+<style>
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@font-face {
+    font-family: 'Scada';
+    src: url('../resources/fonts/Scada-Regular.ttf');
+}
+@font-face {
+    font-family: 'FantasqueSansMono';
+    src: url('../resources/fonts/FantasqueSansMono-Regular.otf');
+}
+
+
+body {
+    font-family: 'Scada';
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.inner_cell {
+    font-family: 'FantasqueSansMono';
+}
+
+.nbviewer {
+    background-color: #FFFBF3;
+}
+
+#notebook-container {
+    background-color: #FFFBF3;
+}
+
+</style>
