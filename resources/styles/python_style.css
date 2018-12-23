@@ -31,6 +31,10 @@
     background: linear-gradient(to top, #2C5C83, #1D405D);
 }
 
+#notebook {
+    background-color: #1e2933;
+}
+
 #notebook-container {
     background: #244D6F;
 }
@@ -102,6 +106,7 @@ div.text_cell code {
 }
 
 div.input_area {
+    border: none;
     padding: 15px 25px 15px 25px;
     background-color: #172027;
     -webkit-box-shadow: inset 10px -5px 20px 0px rgba(4,5,5,1);
@@ -125,6 +130,14 @@ div.cell.rendered.selected {
 }
 
 div.cell.selected::before, div.cell.selected.jupyter-soft-selected::before {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: calc(100% - 2px);
+    content: '';
+}
+
+.edit-mode div.cell.selected::before {
     position: absolute;
     display: block;
     width: 0;
