@@ -11,17 +11,8 @@
     background-color: #FDF5FE;
 }
 
-div.cell {
-    //width: 950px;
-    margin-left: 0% !important;
-    margin-right: auto;
-    font-size: 100%;
-    background: #FDF5FE;
-}
-
 div.text_cell_render{
     font-family: 'Raleway',verdana,arial,sans-serif;
-    line-height: 125%;
     font-size: 100%;
     text-align: justify;
     text-justify:inter-word;
@@ -51,7 +42,6 @@ h1 {
     font-style: bold;
     line-height: 100%;
     color:#802990;
-    //margin-bottom: 0.5em;
     margin-top: 1em;
     display: block;
     white-space: wrap;
