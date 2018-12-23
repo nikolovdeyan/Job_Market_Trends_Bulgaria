@@ -1,38 +1,42 @@
 <style>
-@import url('http://fonts.googleapis.com/css?family=Raleway');
+/*
 @font-face {
-    font-family: 'Scada';
-    src: url('../resources/fonts/Scada-Regular.ttf');
-}
-@font-face {
-    font-family: 'FantasqueSansMono';
-    src: url('../resources/fonts/FantasqueSansMono-Regular.otf');
+    font-family: 'NimbusSans-Regular';
+    src: url('../resources/fonts/NimbusSans-Regular.otf');
 }
 
+@font-face {
+    font-family: 'NimbusSansNarrow-Regular';
+    src: url('../resources/fonts/NimbusSansNarrow-Regular.otf');
+}
 
-body {
-    font-family: 'Scada';
+@font-face {
+    font-family: 'NimbusRoman-Regular';
+    src: url('../resources/fonts/NimbusRoman-Regular.otf');
+}
+
+@font-face {
+    font-family: 'NimbusMono';
+    src: url('../resources/fonts/NimbusMonoPS-Regular.otf');
+}
+
+#site, a {
+    font-family: 'NimbusSans-Regular';
 }
 
 p {
     font-size: 16px;
 }
 
-h1 {
-    font-size: 4em;
+#notebook-container > .code_cell {
+    font-family: 'NimbusMono';
 }
 
-h2 {
-    font-size: 3em;
+h1, h2, h3 {
+    font-family: 'NimbusRoman-Regular';
 }
+*/
 
-h3 {
-    font-size: 2em;
-}
-
-.inner_cell {
-    font-family: 'FantasqueSansMono';
-}
 
 .nbviewer {
     background-color: #FFFBF3;
@@ -42,4 +46,20 @@ h3 {
     background-color: #FFFBF3;
 }
 
+div.input_area {
+    background-color: #FFFBF3;
+}
+
+div.output_area img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.text_cell_render img {
+    max-height: 520px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 </style>
