@@ -326,37 +326,37 @@ iframe {
 
 /* Styles for NBViewer */
 /* Built Ins */
-span.kc, span.kd, span.kn, span.nb {
+.highlight .kc, .highlight .kd, .highlight .kn, .highlight .nb {
     color: #1d8815 !important;
 }
 
 /* Keywords */
-span.ow {
+.highlight .ow {
     color: #1d8815 !important;
 }
 
 /* Operator */
-span.o {
+.highlight .o {
     color: #1d8815 !important;
 }
 
 /* All others */
-span.p {
+.highlight .p {
     color: #1d8815 !important;
 }
 
 /* Strings */
-span.s1 {
+.highlight .s1 {
     color: #cac8b4 !important;
 }
 
 /* Comments */
-span.c1 {
+.highlight .c1 {
     color: #666666 !important;
 }
 
 /* Numbers */
-span.mb, span.mf, span.mh, span.mi, span.mo {
+.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo {
     font-weight: bold !important;
     color: #ffd34f !important;
 }
