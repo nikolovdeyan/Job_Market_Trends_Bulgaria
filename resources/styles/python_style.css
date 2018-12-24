@@ -1,58 +1,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro');
 
-/* Reset CSS Start */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Reset CSS End */
-
 .nbviewer {
     background: #295880;
 }
@@ -144,6 +92,8 @@ div.text_cell code {
 div.input_area {
     border: none;
     padding: 12px 22px 12px 22px;
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: #172027;
     -webkit-box-shadow: inset 10px -5px 20px 0px rgba(4,5,5,1);
     -moz-box-shadow: inset 10px -5px 20px 0px rgba(4,5,5,1);
@@ -281,6 +231,17 @@ iframe {
     border-width: 0;
 }
 
+.CodeMirror-vscrollbar,
+.CodeMirror-hscrollbar,
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 6;
+    display: none;
+}
+
 /* Colors for code highlighting */
 .CodeMirror pre {
     font-family: 'NotoSans', monospace;
@@ -326,7 +287,19 @@ iframe {
 
 /* Styles for NBViewer */
 /* Built Ins */
-.highlight .kc, .highlight .kd, .highlight .kn, .highlight .nb {
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .nb {
+    color: #1d8815 !important;
+}
+
+/* Variables */
+.highlight .nn {
+    color: #1d8815 !important;
+}
+
+pre span.n {
     color: #1d8815 !important;
 }
 
@@ -356,7 +329,11 @@ iframe {
 }
 
 /* Numbers */
-.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo {
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
     font-weight: bold !important;
     color: #ffd34f !important;
 }
