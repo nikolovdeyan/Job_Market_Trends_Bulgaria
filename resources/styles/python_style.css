@@ -89,15 +89,19 @@ div.text_cell code {
     font-family: 'NotoSans', monospace;
 }
 
+div.cell {
+    padding-right: 15px;
+}
+
 div.input_area {
     border: none;
-    padding: 12px 22px 12px 22px;
+    padding: 8px 16px 8px 16px;
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #172027;
-    -webkit-box-shadow: inset 10px -5px 20px 0px rgba(4,5,5,1);
-    -moz-box-shadow: inset 10px -5px 20px 0px rgba(4,5,5,1);
-    box-shadow: inset 10px -5px 20px 0px rgba(4,5,5,1);
+    -webkit-box-shadow: inset 10px -5px 20px 0px rgba(8,10,10,2);
+    -moz-box-shadow: inset 10px -5px 20px 0px rgba(8,10,10,2);
+    box-shadow: inset 10px -5px 20px 0px rgba(8,10,10,2);
 }
 
 div.cell.rendered.selected {
@@ -154,7 +158,7 @@ div.output_text pre {
 }
 
 pre, textarea {
-    overflow: none;
+    overflow: hidden;
 }
 
 div.rendered_html pre, code {
@@ -256,6 +260,10 @@ iframe {
     color: #1d8815;
 }
 
+.CodeMirror-code span.cm-def {
+    color: #a06ba7;
+}
+
 .CodeMirror-code span.cm-property {
     color: #82b043;
 }
@@ -303,6 +311,11 @@ pre span.n {
     color: #1d8815 !important;
 }
 
+/* Function Definition */
+.highlight .nf {
+    color: #a06ba7 !important;
+}
+
 /* Keywords */
 .highlight .ow {
     color: #1d8815 !important;
@@ -334,7 +347,6 @@ pre span.n {
 .highlight .mh,
 .highlight .mi,
 .highlight .mo {
-    font-weight: bold !important;
     color: #ffd34f !important;
 }
 </style>
