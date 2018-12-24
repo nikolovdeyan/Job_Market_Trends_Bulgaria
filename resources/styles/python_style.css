@@ -57,8 +57,13 @@ table {
     background: #295880;
 }
 
-#navbar, ol.breadcrumb, footer {
+#navbar, ol.breadcrumb {
     background-color: #fbfbfb;
+}
+
+footer {
+    background-color: #fbfbfb;
+    color: #172027;
 }
 
 #notebook {
@@ -198,6 +203,10 @@ div.output_text pre {
     color: #f0f0f0;
 }
 
+pre, textarea {
+    overflow: none;
+}
+
 div.rendered_html pre, code {
     font-family: 'NotoSans', monospace;
     font-size: 16px;
@@ -234,6 +243,42 @@ a:active {
 
 .rendered_html :link {
     text-decoration: underline;
+}
+
+/* Table styles */
+table {
+    border: 1px solid #BF4D28;
+}
+
+.rendered_html table {
+    float:left;
+    width:100%;
+    border-collapse: collapse;
+}
+
+.rendered_html th {
+    text-align: left;
+    background-color: #E5E1D8;
+}
+
+.rendered_html td {
+    text-align: left;
+}
+
+.rendered_html table tr:nth-child(odd) {
+    background-color: #F0E4D5;
+}
+
+.rendered_html table tr:nth-child(even) {
+    background-color: #F5EDE1;
+}
+
+.rendered_html table tr:hover {
+    background-color: #BF4D28;
+}
+
+iframe {
+    border-width: 0;
 }
 
 /* Colors for code highlighting */
@@ -279,39 +324,40 @@ a:active {
     color: #1d8815;
 }
 
-/* Table styles */
-table {
-    border: 1px solid #BF4D28;
+/* Styles for NBViewer */
+/* Built Ins */
+span.kc, span.kd, span.kn, span.nb {
+    color: #1d8815;
 }
 
-.rendered_html table {
-    float:left;
-    width:100%;
-    border-collapse: collapse;
+/* Keywords */
+span.ow {
+    color: #1d8815;
 }
 
-.rendered_html th {
-    text-align: left;
-    background-color: #E5E1D8;
+/* Operator */
+span.o {
+    color: #1d8815;
 }
 
-.rendered_html td {
-    text-align: left;
+/* All others */
+span.p {
+    color: #1d8815;
 }
 
-.rendered_html table tr:nth-child(odd) {
-    background-color: #F0E4D5;
+/* Strings */
+span.s1 {
+    color: #cac8b4;
 }
 
-.rendered_html table tr:nth-child(even) {
-    background-color: #F5EDE1;
+/* Comments */
+span.c1 {
+    color: #666666;
 }
 
-.rendered_html table tr:hover {
-    background-color: #BF4D28;
-}
-
-iframe {
-    border-width: 0;
+/* Numbers */
+span.mb, span.mf, span.mh, span.mi, span.mo {
+    font-weight: bold;
+    color: #ffd34f;
 }
 </style>
