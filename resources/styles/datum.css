@@ -1,28 +1,6 @@
 <style>
-@font-face {
-    font-family: 'FiraSans-Book';
-    src: url('../resources/fonts/FiraSans-Book.ttf');
-}
-
-@font-face {
-    font-family: 'FiraCode';
-    src: url('../resources/fonts/FiraCode-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'FiraSansCondensed';
-    src: url('../resources/fonts/FiraSansExtraCondensed-Light.ttf');
-}
-
-@font-face {
-    font-family: 'FiraSansCondensedRegular';
-    src: url('../resources/fonts/FiraSansExtraCondensed-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'FiraSansCondensedBold';
-    src: url('../resources/fonts/FiraSansExtraCondensed-SemiBold.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans|Fira+Sans+Condensed|Fira+Sans+Extra+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
 
 .nbviewer {
     background-color: #FFFAF0;
@@ -33,33 +11,44 @@
 }
 
 /* Headings */
-div#notebook-container h1, h2, h3, h4, h5 {
-    color: #655643;
-}
-
 .text_cell_render h1 {
-    font-family: 'FiraSansCondensedBold',verdana,arial,sans-serif;
-    font-size: 4em;
+    color: #655643;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 3.4em;
+    text-shadow: 0 2px #FFFAF0, 0 3px #8c8b8b;
+    padding: 30px 0 25px 0;
 }
 
 .text_cell_render h2 {
-    font-family: 'FiraSansCondensedBold',verdana,arial,sans-serif;
+    color: #655643;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
     font-size: 3em;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    border-bottom: 4px inset #655643;
 }
 
 .text_cell_render h3 {
-    font-family: 'FiraSansCondensed',verdana,arial,sans-serif;
-    font-size: 2em;
+    color: #655643;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 1.8em;
 }
 
 .text_cell_render h4 {
-    font-family: 'FiraSansCondensed',verdana,arial,sans-serif;
-    font-size: 1.5em;
+    color: #655643;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 1.4em;
 }
 
+/* Use for subtitles and other non-headings */
 div.rendered_html > h5 {
-    font-family: 'FiraSansCondensed',verdana,arial,sans-serif;
-    font-size: 1.4em;
+    color: #655643;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.0em;
     font-weight: normal;
     font-style: normal;
     margin-top: 0.5em;
@@ -67,7 +56,7 @@ div.rendered_html > h5 {
 
 /* Use for image and chart captions */
 div.rendered_html > h6 {
-    font-family: 'FiraSansCondensed',verdana,arial,sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 0.9em;
     line-height: 1.5em;
     color: #cac8c9;
@@ -79,17 +68,16 @@ div.rendered_html > h6 {
 }
 
 div#notebook-container p {
-    font-family: 'FiraSans-Book',verdana,arial,sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
-    text-indent: 2em;
+    text-indent: 1em;
     color: #40362F;
 }
 
 /* Lists */
 ol, ul {
-    font-family: 'FiraSans-Book',verdana,arial,sans-serif;
-    font-size: 1.2em;
+    font-family: 'Fira Sans Condensed', sans-serif;
     line-height: 1.4em;
     color: #40362F;
 }
@@ -106,7 +94,7 @@ div.output_prompt {
 div.text_cell code {
     background: transparent;
     color: #40362F;
-    font-family: 'FiraCode', Consolas, monospace;
+    font-family: 'Fira Mono', monospace;
 }
 
 div.input_area {
@@ -127,7 +115,7 @@ div.output_area img {
 }
 
 div.rendered_html pre, code {
-    font-family: 'FiraCode', monospace;
+    font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #40362F;
@@ -135,8 +123,8 @@ div.rendered_html pre, code {
 }
 
 div.output_text pre {
-    font-family: 'FiraCode', monospace;
-    font-size: 12px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 13px;
     font-weight: 300;
     color: #40362F;
 }
@@ -160,15 +148,12 @@ div.output output_scroll {
 
 div.rendered_html hr {
     border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    height: 2px;
+    background-color: #655643;
 }
 
 div.rendered_html pre, code {
-    font-family: 'FiraCode', Consolas, monospace;
+    font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 16px;
     color: #40362F;
     background-color: #FFFAF0;
