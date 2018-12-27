@@ -24,7 +24,7 @@ footer {
 }
 
 /* Headings */
-div#notebook-container h1, h2, h3, h4, h5, h6 {
+div#notebook-container h1, h2, h3, h4, h5 {
     color: #FBFBFB;
 }
 
@@ -48,22 +48,33 @@ div#notebook-container h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
 }
 
-.text_cell_render h5 {
+div.rendered_html > h5 {
     font-family: 'SourceSansPro', sans-serif;
     font-size: 1.2em;
-    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
 }
 
-.text_cell_render h6 {
+/* Use for image and chart captions */
+div.rendered_html > h6 {
+    display: block;
+    color: #cac8c9;
     font-family: 'SourceSansPro', sans-serif;
-    font-size: 1.1em;
-    font-style: italic;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: normal;
+    max-width: 520px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#notebook-container p {
     font-family: 'SourceSansPro', sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
+    text-indent: 2em;
     color: #cac8c9;
 }
 
