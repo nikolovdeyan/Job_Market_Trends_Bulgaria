@@ -33,7 +33,7 @@
 }
 
 /* Headings */
-div#notebook-container h1, h2, h3, h4, h5, h6 {
+div#notebook-container h1, h2, h3, h4, h5 {
     color: #655643;
 }
 
@@ -57,22 +57,32 @@ div#notebook-container h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
 }
 
-.text_cell_render h5 {
+div.rendered_html > h5 {
     font-family: 'FiraSansCondensed',verdana,arial,sans-serif;
-    font-size: 1.2em;
-    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 0.5em;
 }
 
-.text_cell_render h6 {
+/* Use for image and chart captions */
+div.rendered_html > h6 {
     font-family: 'FiraSansCondensed',verdana,arial,sans-serif;
-    font-size: 1.1em;
-    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #cac8c9;
+    font-weight: normal;
+    max-width: 520px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#notebook-container p {
     font-family: 'FiraSans-Book',verdana,arial,sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
+    text-indent: 2em;
     color: #40362F;
 }
 
@@ -116,9 +126,23 @@ div.output_area img {
     margin-right: auto;
 }
 
-div.output_text pre {
-    font-family: 'FiraCode', Consolas, monospace;
+div.rendered_html pre, code {
+    font-family: 'FiraCode', monospace;
+    font-size: 16px;
+    font-weight: 400;
     color: #40362F;
+    background-color: #E5E1D8;
+}
+
+div.output_text pre {
+    font-family: 'FiraCode', monospace;
+    font-size: 12px;
+    font-weight: 300;
+    color: #40362F;
+}
+
+pre, textarea {
+    overflow: hidden;
 }
 
 div.text_cell_render img {
@@ -145,13 +169,9 @@ div.rendered_html hr {
 
 div.rendered_html pre, code {
     font-family: 'FiraCode', Consolas, monospace;
+    font-size: 16px;
     color: #40362F;
     background-color: #FFFAF0;
-    border: 1px solid #E5E1D8;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 4px;
 }
 
 /* Links */
