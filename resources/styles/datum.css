@@ -100,7 +100,7 @@ div.text_cell code {
 div.input_area {
     background-color: #FFFAF0;
     border: 1px solid #E5E1D8;
-    background: repeating-linear-gradient(135deg, #FFFAF0, #FFFAF0 5px, #fff 5px, #fff 10px);
+    background: repeating-linear-gradient(135deg, #FFFAF0, #FFFAF0 5px, #F7F7ED 5px, #F7F7ED 10px);
 }
 
 div.cell.rendered.selected {
