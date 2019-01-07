@@ -30,7 +30,7 @@ DATA_STYLE = dict(
         title=dict(
             color='#655643',
             family='Merryweather',
-            size=22,),
+            size=18,),
         text=dict(
             color='#655643',
             family='Fira Sans Condensed',
@@ -42,7 +42,7 @@ DATA_STYLE = dict(
         anno=dict(
             color='#40362F',
             family='Fira Sans Extra Condensed',
-            size=18,
+            size=14,
         ),
         anno_in=dict(
             color='#fffaf0',
