@@ -35,6 +35,10 @@ DATA_STYLE = dict(
             color='#655643',
             family='Fira Sans Condensed',
             size=12,),
+        ticks=dict(
+            color='#655643',
+            family='Fira Sans Condensed',
+            size=8,),
         btn=dict(
             color='#655643',
             family='Fira Sans Condensed',
@@ -45,7 +49,7 @@ DATA_STYLE = dict(
             size=14,
         ),
         anno_in=dict(
-            color='#fffaf0',
+            color='#8f391e',
             family='Fira Sans Extra Condensed',
             size=18,
         ),

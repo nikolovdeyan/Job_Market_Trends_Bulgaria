@@ -3,11 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
 
 .nbviewer {
-    background-color: #FFFAF0;
+    background-color: #E5E1D8;
+}
+
+#notebook {
+    background-color: #E5E1D8;
 }
 
 #notebook-container {
-    background-color: #FFFAF0
+    background-color: #FFFAF0;
+    max-width: 1200px;
+    border-radius: 4px;
 }
 
 /* Headings */
@@ -27,7 +33,7 @@
     font-size: 2.4em;
     padding: 34px 0 6px 0;
     margin-bottom: 26px;
-    border-bottom: 2px solid #655643;
+    border-bottom: 2px solid #E5E1D8;
 }
 
 .text_cell_render h3 {
@@ -54,8 +60,8 @@ div.rendered_html > h5 {
     font-style: normal;
     margin-top: 0.5em;
     padding: 8px 0 8px 0;
-    border-bottom: 2px solid #655643;
-    border-top: 2px solid #655643;
+    border-bottom: 2px solid #E5E1D8;
+    border-top: 2px solid #E5E1D8;
 }
 
 /* Use for image and chart captions */
@@ -65,7 +71,7 @@ div.rendered_html > h6 {
     line-height: 1.5em;
     color: #cac8c9;
     font-weight: normal;
-    max-width: 520px;
+    max-width: 525px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -75,24 +81,28 @@ div#notebook-container p {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
-    text-indent: 1em;
-    color: #40362F;
+    color: #655643;
 }
 
 /* Lists */
 ol, ul {
     font-family: 'Fira Sans Condensed', sans-serif;
-    line-height: 1.4em;
-    color: #40362F;
+    line-height: 1.3em;
+    color: #655643;
 }
 
+div.prompt {
+    min-width: 8ex;
+}
 
 div.input_prompt {
-    color: #40362F;
+    color: #aad0bc;
+    font-size: 0.7em;
 }
 
 div.output_prompt {
-    color: #40362F;
+    color: #aad0bc;
+    font-size: 0.7em;
 }
 
 div.text_cell code {
@@ -133,12 +143,18 @@ div.output_text pre {
     color: #40362F;
 }
 
+div.output_subarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 pre, textarea {
     overflow: hidden;
 }
 
 div.text_cell_render img {
-    max-height: 520px;
+    max-height: 525px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -152,13 +168,13 @@ div.output output_scroll {
 
 div.rendered_html hr {
     border: 0;
-    height: 2px;
+    height: 1px;
     background-color: #655643;
 }
 
 div.rendered_html pre, code {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 1.1em;
     color: #40362F;
     background-color: #FFFAF0;
 }
@@ -238,7 +254,6 @@ table {
 
 .rendered_html table {
     float:left;
-    width:100%;
     border-collapse: collapse;
 }
 
