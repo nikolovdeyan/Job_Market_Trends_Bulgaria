@@ -20,31 +20,42 @@
     box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
 }
 
+/* Jupyter Notebook Header Styling */
+body > #header {
+    background-color:#fafafa;
+}
+
+#header #menubar #menus {
+    background-color:#fefefe;
+}
+
 /* Headings */
 .text_cell_render h1 {
     color: #655643;
     font-family: 'Merriweather', serif;
     font-weight: 900;
-    font-size: 3.2em;
+    font-size: 3.4em;
+    text-indent: 22px;
     text-shadow: 0 2px #FFFAF0, 0 3px #8c8b8b;
-    padding: 30px 0 20px 0;
+    padding: 40px 0 12px 0;
 }
 
 .text_cell_render h2 {
     color: #655643;
     font-family: 'Merriweather', serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 2.4em;
-    padding: 34px 0 6px 0;
-    margin-bottom: 26px;
-    border-bottom: 2px solid #E5E1D8;
+    text-indent: 22px;
+    padding: 40px 0 5px 0;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #655643;
 }
 
 .text_cell_render h3 {
     color: #655643;
     font-family: 'Merriweather', serif;
     font-weight: 100;
-    font-size: 1.6em;
+    font-size: 1.8em;
     padding: 6px 0 0 0;
 }
 
@@ -52,20 +63,20 @@
     color: #655643;
     font-family: 'Merriweather', serif;
     font-weight: 100;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 /* Use for subtitles and other non-headings */
 div.rendered_html > h5 {
     color: #655643;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1.0em;
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    font-style: normal important!;
+    text-indent: 22px;
     margin-top: 0.5em;
-    padding: 8px 0 8px 0;
-    border-bottom: 2px solid #E5E1D8;
-    border-top: 2px solid #E5E1D8;
+    padding: 6px 0 6px 0;
+    border-bottom: 1px solid #655643;
+    border-top: 1px solid #655643;
 }
 
 /* Use for image and chart captions */
@@ -88,15 +99,19 @@ div#notebook-container p {
     color: #655643;
 }
 
+/* Plotly Exported Charts Styling */
+.js-plotly-plot .plotly,
+.js-plotly-plot .plotly div {
+    direction: ltr;
+    font-family: "Fira Sans Extra Condensed", verdana, arial, sans-serif;
+}
+
+
 /* Lists */
 ol, ul {
     font-family: 'Fira Sans Condensed', sans-serif;
     line-height: 1.3em;
     color: #655643;
-}
-
-div.prompt {
-    min-width: 8ex;
 }
 
 div.input_prompt {
@@ -109,10 +124,16 @@ div.output_prompt {
     font-size: 0.7em;
 }
 
+div.output_subarea {
+    padding: 0;
+}
+
 div.text_cell code {
-    background: transparent;
+    padding: 2px;
+    background-color: #E5E1D8;
     color: #40362F;
     font-family: 'Fira Mono', monospace;
+    font-size: 0.9em;
 }
 
 div.input_area {
@@ -122,7 +143,7 @@ div.input_area {
 }
 
 div.cell.rendered.selected {
-    background: #E5E1D8;
+    background: #F7F7ED;
     border: 1px solid #38614F;
 }
 
@@ -147,18 +168,12 @@ div.output_text pre {
     color: #40362F;
 }
 
-div.output_subarea {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 pre, textarea {
     overflow: hidden;
 }
 
 div.text_cell_render img {
-    max-height: 525px;
+    max-height: 550px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -177,8 +192,6 @@ div.rendered_html hr {
 }
 
 div.rendered_html pre, code {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 1.1em;
     color: #40362F;
     background-color: #FFFAF0;
 }
@@ -214,41 +227,52 @@ a:active {
 }
 
 /* Colors for code highlighting */
+.CodeMirror pre {
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
 .CodeMirror-code span.cm-keyword {
-    color: #557C6C;
+    color: #5F362E;
 }
 
 .CodeMirror-code span.cm-variable {
-    color: #4C4138;
+    color: #72614B;
 }
 
 .CodeMirror-code span.cm-property {
-    color: #40362F;
+    color: #72614B;
+}
+
+.CodeMirror-code span.cm-def {
+    color: #B64F4E;
 }
 
 .CodeMirror-code span.cm-operator {
-    color: #4C4138;
+    color: #72614B;
 }
 
 .CodeMirror-code span.cm-string {
-    color: #7F331B;
+    color: #0B7761;
 }
 
 .CodeMirror-code span.cm-number {
-    color: #458C7A;
+    color: #2764E6;
 }
 
 .CodeMirror-code span.cm-comment {
-    color: #557C6C;
+    color: #75AC95;
 }
 
 .CodeMirror-code span.cm-builtin {
-    color: #557C6C;
+    color: #5F362E;
 }
 
 /* Code with no class applied (brackets mostly) */
 .CodeMirror-line > span {
-    color: #557C6C;
+    color: #72614B;
 }
 
 /* Table styles */
@@ -257,25 +281,27 @@ table {
 }
 
 .rendered_html table {
-    float:left;
+    float: middle;
     border-collapse: collapse;
 }
 
 .rendered_html table th {
+    color: #40362F;
     text-align: left;
-    background-color: #E5E1D8;
+    background-color: #f2e6ce;
 }
 
 .rendered_html td {
+    color: #40362F;
     text-align: left;
 }
 
 .rendered_html table tr:nth-child(odd) {
-    background-color: #F0E4D5;
+    background-color: #F7F7ED;
 }
 
 .rendered_html table tr:nth-child(even) {
-    background-color: #F5EDE1;
+    background-color: #FFFAF0;
 }
 
 .rendered_html table tr:hover {
