@@ -25,6 +25,7 @@ STYLE = dict(
         )
     ),
 )
+
 DATA_STYLE = dict(
     chart_fonts=dict(
         title=dict(
