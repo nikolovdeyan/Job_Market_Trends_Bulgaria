@@ -234,11 +234,14 @@ a:active {
     letter-spacing: -2px;
 }
 
-.CodeMirror-code span.cm-keyword {
+.CodeMirror-code span.cm-keyword,
+.highlight .k,
+.highlight .ow {
     color: #5F362E;
 }
 
-.CodeMirror-code span.cm-variable {
+.CodeMirror-code span.cm-variable,
+.highlight .na {
     color: #72614B;
 }
 
@@ -254,19 +257,23 @@ a:active {
     color: #72614B;
 }
 
-.CodeMirror-code span.cm-string {
+.CodeMirror-code span.cm-string,
+.highlight .s {
     color: #0B7761;
 }
 
-.CodeMirror-code span.cm-number {
+.CodeMirror-code span.cm-number,
+.highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo {
     color: #2764E6;
 }
 
-.CodeMirror-code span.cm-comment {
+.CodeMirror-code span.cm-comment,
+.highlight .c1, .highlight .cs {
     color: #75AC95;
 }
 
-.CodeMirror-code span.cm-builtin {
+.CodeMirror-code span.cm-builtin,
+.highlight .nb {
     color: #5F362E;
 }
 
