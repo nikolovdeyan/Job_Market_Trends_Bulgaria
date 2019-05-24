@@ -34,8 +34,8 @@ body > #header {
     color: #655643;
     font-family: 'Merriweather', serif;
     font-weight: 900;
-    font-size: 3.4em;
-    text-indent: 22px;
+    text-align: center;
+    font-size: 3.2em;
     text-shadow: 0 2px #FFFAF0, 0 3px #8c8b8b;
     padding: 40px 0 12px 0;
 }
@@ -68,11 +68,13 @@ body > #header {
 
 /* Use for subtitles and other non-headings */
 div.rendered_html > h5 {
-    color: #655643;
     font-family: 'Merriweather', serif;
+    line-height: 1.5em;
+    color: #655643;
     font-weight: 200;
     font-style: normal important!;
     text-indent: 22px;
+    text-align: center;
     margin-top: 0.5em;
     padding: 6px 0 6px 0;
     border-bottom: 1px solid #655643;
@@ -105,7 +107,6 @@ div#notebook-container p {
     direction: ltr;
     font-family: "Fira Sans Extra Condensed", verdana, arial, sans-serif;
 }
-
 
 /* Lists */
 ol, ul {
