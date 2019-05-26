@@ -12,9 +12,8 @@
 
 #notebook-container {
     background-color: #FFFAF0;
-    max-width: 1200px;
+    max-width: 1100px;
     border-radius: 4px;
-    padding: 60px 40px 40px 40px;
     -webkit-box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
     -moz-box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
     box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
@@ -31,54 +30,54 @@ body > #header {
 
 /* Headings */
 .text_cell_render h1 {
-    color: #655643;
+    color: #655B4F;
     font-family: 'Merriweather', serif;
     font-weight: 900;
     text-align: center;
-    font-size: 3.2em;
-    text-shadow: 0 2px #FFFAF0, 0 3px #8c8b8b;
+    font-size: 3.0em;
     padding: 40px 0 12px 0;
+    text-shadow: 0 2px #FFFAF0, 0 3px #8c8b8b;
 }
 
 .text_cell_render h2 {
-    color: #655643;
+    color: #655B4F;
     font-family: 'Merriweather', serif;
     font-weight: 600;
-    font-size: 2.4em;
+    font-size: 2.2em;
     text-indent: 22px;
-    padding: 40px 0 5px 0;
+    padding: 40px 0 6px 0;
     margin-bottom: 24px;
-    border-bottom: 1px solid #655643;
+    border-bottom: 1px solid #655B4F;
 }
 
 .text_cell_render h3 {
-    color: #655643;
+    color: #655B4F;
     font-family: 'Merriweather', serif;
     font-weight: 100;
-    font-size: 1.8em;
     padding: 6px 0 0 0;
+    font-size: 1.6em;
 }
 
 .text_cell_render h4 {
-    color: #655643;
+    color: #655B4F;
     font-family: 'Merriweather', serif;
     font-weight: 100;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /* Use for subtitles and other non-headings */
 div.rendered_html > h5 {
     font-family: 'Merriweather', serif;
     line-height: 1.5em;
-    color: #655643;
+    color: #655B4F;
     font-weight: 200;
     font-style: normal important!;
     text-indent: 22px;
     text-align: center;
     margin-top: 0.5em;
     padding: 6px 0 6px 0;
-    border-bottom: 1px solid #655643;
-    border-top: 1px solid #655643;
+    border-bottom: 1px solid #655B4F;
+    border-top: 1px solid #655B4F;
 }
 
 /* Use for image and chart captions */
@@ -98,7 +97,7 @@ div#notebook-container p {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 1.2em;
     line-height: 1.3em;
-    color: #655643;
+    color: #655B4F;
 }
 
 /* Plotly Exported Charts Styling */
@@ -112,7 +111,7 @@ div#notebook-container p {
 ol, ul {
     font-family: 'Fira Sans Condensed', sans-serif;
     line-height: 1.3em;
-    color: #655643;
+    color: #655B4F;
 }
 
 div.input_prompt {
@@ -125,14 +124,20 @@ div.output_prompt {
     font-size: 0.7em;
 }
 
+div.prompt {
+    min-width: 2ex;
+}
+
 div.output_subarea {
+    min-width: 425px;
+    max-width: calc(100% - 1ex);
     padding: 0;
 }
 
 div.text_cell code {
     padding: 2px;
     background-color: #E5E1D8;
-    color: #40362F;
+    color: #483F3A;
     font-family: 'Fira Mono', monospace;
     font-size: 0.9em;
 }
@@ -145,7 +150,7 @@ div.input_area {
 
 div.cell.rendered.selected {
     background: #F7F7ED;
-    border: 1px solid #38614F;
+    border: 1px solid #293C34;
 }
 
 div.output_area img {
@@ -169,6 +174,7 @@ div.output_text pre {
     color: #40362F;
 }
 
+
 pre, textarea {
     overflow: hidden;
 }
@@ -189,7 +195,7 @@ div.output output_scroll {
 div.rendered_html hr {
     border: 0;
     height: 1px;
-    background-color: #655643;
+    background-color: #655B4F;
 }
 
 div.rendered_html pre, code {
@@ -243,19 +249,19 @@ a:active {
 
 .CodeMirror-code span.cm-variable,
 .highlight .na {
-    color: #72614B;
+    color: #655B4F;
 }
 
 .CodeMirror-code span.cm-property {
-    color: #72614B;
+    color: #655B4F;
 }
 
 .CodeMirror-code span.cm-def {
-    color: #B64F4E;
+    color: #293C34;
 }
 
 .CodeMirror-code span.cm-operator {
-    color: #72614B;
+    color: #655B4F;
 }
 
 .CodeMirror-code span.cm-string,
@@ -265,7 +271,7 @@ a:active {
 
 .CodeMirror-code span.cm-number,
 .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo {
-    color: #2764E6;
+    color: #265BCA;
 }
 
 .CodeMirror-code span.cm-comment,
@@ -288,10 +294,6 @@ table {
     border: 1px solid #BF4D28;
 }
 
-.rendered_html table {
-    float: middle;
-    border-collapse: collapse;
-}
 
 .rendered_html table th {
     color: #40362F;
@@ -310,10 +312,6 @@ table {
 
 .rendered_html table tr:nth-child(even) {
     background-color: #FFFAF0;
-}
-
-.rendered_html table tr:hover {
-    background-color: #BF4D28;
 }
 
 iframe {
