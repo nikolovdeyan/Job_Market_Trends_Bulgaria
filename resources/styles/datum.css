@@ -13,6 +13,7 @@
 #notebook-container {
     background-color: #FFFAF0;
     max-width: 1100px;
+    padding: 50px;
     border-radius: 4px;
     -webkit-box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
     -moz-box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
@@ -34,7 +35,7 @@ body > #header {
     font-family: 'Merriweather', serif;
     font-weight: 900;
     text-align: center;
-    font-size: 3.0em;
+    font-size: 2.5em;
     padding: 40px 0 12px 0;
     text-shadow: 0 2px #FFFAF0, 0 3px #8c8b8b;
 }
@@ -53,7 +54,7 @@ body > #header {
 .text_cell_render h3 {
     color: #655B4F;
     font-family: 'Merriweather', serif;
-    font-weight: 100;
+    font-weight: 300;
     padding: 6px 0 0 0;
     font-size: 1.6em;
 }
@@ -317,4 +318,23 @@ table {
 iframe {
     border-width: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    #notebook-container {
+        background-color: #FFFAF0;
+        padding: 15px;
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
+        -moz-box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
+        box-shadow: 0px 0px 12px 1px rgba(101,86,67,0.75);
+    }
+
+    .text_cell_render h1,
+    .text_cell_render h2 {
+        text-indent: 0;
+        text-align: left;
+        padding: 40px 22px 12px 22px;
+    }
+}
+
 </style>
