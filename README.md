@@ -11,7 +11,7 @@ The project will be organized as a series of articles offering a short analysis 
 The underlying data is not hosted within this repository.
 
 
-## Data Jobs Analysis
+## Data Job Analysis
 
 The first article published is concerned with the employment opportunities in the area of data analytics, data engineering, and data visualization. The topic was chosen because of the author's personal interest in data and gives a rare insight into one of the most rapidly evolving sectors on the job market. To see the rendered page along with the interactive charts available use the link to the `nbviewer` render below:
 
