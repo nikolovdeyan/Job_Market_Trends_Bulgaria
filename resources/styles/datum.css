@@ -239,7 +239,6 @@ a:active {
     font-family: 'Fira Mono', monospace;
     font-size: 0.9em;
     font-weight: 600;
-    letter-spacing: -2px;
 }
 
 .CodeMirror-code span.cm-keyword,
