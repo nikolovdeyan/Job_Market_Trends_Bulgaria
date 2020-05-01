@@ -45,14 +45,14 @@ DATA_STYLE = dict(
             family='Fira Sans Condensed',
             size=14,),
         anno=dict(
-            color='#40362F',
+            color='#655643',
             family='Fira Sans Extra Condensed',
-            size=14,
+            textfont_size=8,
         ),
         anno_in=dict(
             color='#8f391e',
             family='Fira Sans Extra Condensed',
-            size=18,
+            textfont_size=8,
         ),
     ),
     colors=dict(
