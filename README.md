@@ -13,9 +13,11 @@ The underlying data is not hosted within this repository.
 
 ## Articles
 
-The first article published is concerned with the employment opportunities in the area of data analytics, data engineering, and data visualization. The topic was chosen because of the author's personal interest in data and gives a rare insight into one of the most rapidly evolving sectors on the job market. To see the rendered page along with the interactive charts available use the link to the `nbviewer` render below:
+
+This article illustrates the general trends of the job market by looking at all submitted offers.
+- [Bulgaria Job Market Trends (`nbviewer`)](https://nbviewer.jupyter.org/github/nikolovdeyan/Job_Market_Trends_Bulgaria/blob/master/wb_alljobs/All_Offers_Analysis.ipynb)
+
+
+This article published is concerned with the employment opportunities in the area of data analytics, data engineering, and data visualization. The topic was chosen because of the author's personal interest in data and gives a rare insight into one of the most rapidly evolving sectors on the job market. To see the rendered page along with the interactive charts available use the link to the `nbviewer` render below:
 - [Data Jobs Analysis  (`nbviewer`)](https://nbviewer.jupyter.org/github/nikolovdeyan/Job_Market_Trends_Bulgaria/blob/master/wb_datajobs/Data_Offers_Analysis.ipynb)
 
-
-The second article illustrates the general trends of the job market by looking at all submitted offers.
-- [Bulgaria Job Market Trends (`nbviewer`)](https://nbviewer.jupyter.org/github/nikolovdeyan/Job_Market_Trends_Bulgaria/blob/master/wb_alljobs/All_Offers_Analysis.ipynb)
