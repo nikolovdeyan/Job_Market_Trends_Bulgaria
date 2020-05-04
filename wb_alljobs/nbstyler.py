@@ -44,10 +44,10 @@ DATA_STYLE = dict(
             color='#655643',
             family='Fira Sans Condensed',
             size=14,),
-        anno=dict(
-            color='#40362F',
-            family='Fira Sans Extra Condensed',
-            size=14,
+        bg_anno=dict(
+            color='#DED0BD',
+            family='"Fira Sans Extra Condensed", sans-serif',
+            size=40,
         ),
         anno_in=dict(
             color='#8f391e',
