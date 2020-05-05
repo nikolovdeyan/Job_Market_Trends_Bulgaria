@@ -44,10 +44,10 @@ DATA_STYLE = dict(
             color='#655643',
             family='Fira Sans Condensed',
             size=14,),
-        anno=dict(
-            color='#40362F',
-            family='Fira Sans Extra Condensed',
-            size=14,
+        bg_anno=dict(
+            color='#DED0BD',
+            family='"Fira Sans Extra Condensed", sans-serif',
+            size=40,
         ),
         anno_in=dict(
             color='#8f391e',
@@ -76,4 +76,17 @@ DATA_STYLE = dict(
               '#aad0bc', '#9cc9b4', '#8ec2ab', '#80bca3', '#75ac95',
               '#6a9c87', '#5f8c79', '#557c6c'],
     ),
+    colorlist=[
+        '#4E0A80', '#D62275', '#D69122', '#CCB821',
+        '#F28F1B', '#594936', '#5CC790', '#1BF246',
+        '#375E4E', '#A185AB', '#AB9563', '#5E543B',
+        '#81D1DE', '#133E45', '#B54F4E', '#DE81AC',
+    ],
 )
+
+JS_SNIPPETS = dict(
+    chart_fonts="""
+var newNode = document.createElement('div');
+newNode.innerHTML = \"<link href='https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans|Fira+Sans+Condensed|Fira+Sans+Extra+Condensed' rel='stylesheet' type='text/css'>\";
+document.getElementsByTagName('head')[0].appendChild(newNode);
+""",)
