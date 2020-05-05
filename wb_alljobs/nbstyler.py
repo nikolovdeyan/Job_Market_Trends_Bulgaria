@@ -77,3 +77,10 @@ DATA_STYLE = dict(
               '#6a9c87', '#5f8c79', '#557c6c'],
     ),
 )
+
+JS_SNIPPETS = dict(
+    chart_fonts="""
+var newNode = document.createElement('div');
+newNode.innerHTML = \"<link href='https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans|Fira+Sans+Condensed|Fira+Sans+Extra+Condensed' rel='stylesheet' type='text/css'>\";
+document.getElementsByTagName('head')[0].appendChild(newNode);
+""",)
