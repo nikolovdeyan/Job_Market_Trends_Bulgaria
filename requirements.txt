@@ -1,8 +1,10 @@
+argon2-cffi==20.1.0
 attrs==19.3.0
 backcall==0.1.0
 beautifulsoup4==4.8.2
 bleach==3.1.4
 certifi==2019.11.28
+cffi==1.14.4
 chardet==3.0.4
 chart-studio==1.1.0
 click==7.1.2
@@ -29,7 +31,7 @@ mistune==0.8.4
 nbconvert==5.6.1
 nbformat==5.0.3
 nltk==3.5
-notebook==6.0.2
+notebook==6.2.0
 numpy==1.18.1
 pandas==1.2.0
 pandocfilters==1.4.2
@@ -42,6 +44,7 @@ prometheus-client==0.7.1
 prompt-toolkit==2.0.10
 psycopg2-binary==2.8.4
 ptyprocess==0.6.0
+pycparser==2.20
 Pygments==2.5.2
 pyparsing==2.4.6
 pyrsistent==0.15.7
@@ -57,7 +60,7 @@ six==1.13.0
 soupsieve==1.9.5
 terminado==0.8.3
 testpath==0.4.4
-tornado==6.0.3
+tornado==6.1
 tqdm==4.56.0
 traitlets==4.3.3
 urllib3==1.25.7
